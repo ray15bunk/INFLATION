@@ -41,16 +41,25 @@ jobs:
       - name: Fetch indices (with retry until the new month appears)
         if: github.event_name != 'push'
         env:
-          # Данные за предыдущий календарный месяц: 15 сентября выходит индекс за август.
-          EXPECT: prev-month
+          # Ждать новый месяц имеет смысл только в запуске по расписанию 15-го числа.
+          # При ручном запуске (workflow_dispatch) просто берём то, что опубликовано,
+          # иначе прогон впустую ждёт час и падает.
+          EXPECT: ${{ github.event_name == 'schedule' && 'prev-month' || '' }}
         run: |
           mkdir -p data
+          if [ -n "$EXPECT" ]; then
+            expect_arg="--expect-period $EXPECT"
+          else
+            expect_arg=""
+            echo "Ручной запуск: берём последние опубликованные данные без ожидания."
+          fi
+
           for attempt in 1 2 3 4 5 6; do
             set +e
             python cbs_index.py \
               --codes 120010 200010 \
               --lang he \
-              --expect-period "$EXPECT" \
+              $expect_arg \
               --out data/latest.json
             status=$?
             set -e
