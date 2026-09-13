@@ -1,0 +1,35 @@
+{
+  "retrieved_at": "2026-09-13T13:05:03+00:00",
+  "indices": {
+    "120010": {
+      "code": 120010,
+      "name": "מדד המחירים לצרכן - כללי",
+      "name_ru": "Индекс потребительских цен",
+      "year": 2026,
+      "month": 7,
+      "month_name": "יולי",
+      "period": "2026-07",
+      "value": 105.1,
+      "base": "2024 ממוצע",
+      "change_1m_pct": 0.3,
+      "change_12m_pct": 1.5,
+      "retrieved_at": "2026-09-13T13:05:05+00:00",
+      "source": "https://api.cbs.gov.il/index/data/price?id=120010"
+    },
+    "200010": {
+      "code": 200010,
+      "name": "מדד מחירי תשומה בבנייה למגורים - כללי",
+      "name_ru": "Индекс цен ресурсов в жилищном строительстве",
+      "year": 2026,
+      "month": 7,
+      "month_name": "יולי",
+      "period": "2026-07",
+      "value": 103.5,
+      "base": "2025 יולי",
+      "change_1m_pct": -0.1,
+      "change_12m_pct": 3.5,
+      "retrieved_at": "2026-09-13T13:05:05+00:00",
+      "source": "https://api.cbs.gov.il/index/data/price?id=200010"
+    }
+  }
+}

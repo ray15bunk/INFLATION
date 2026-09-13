@@ -1,0 +1,120 @@
+name: Fetch CBS price indices
+
+on:
+  schedule:
+    # ЦСБ публикует индексы 15-го числа в 18:30 по Израилю.
+    # GitHub Actions работает только в UTC, а Израиль переходит на летнее время,
+    # поэтому 16:45 UTC = 19:45 IDT (лето) и 18:45 IST (зима) — всегда ПОСЛЕ публикации.
+    - cron: "45 16 15 * *"
+    # Резервный запуск: расписания GitHub иногда пропускаются под нагрузкой.
+    # Если данные уже закоммичены, шаг commit ничего не делает.
+    - cron: "45 16 16 * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cbs-index
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # При push-сборке сайта данные не перезапрашиваем — берём то, что в репозитории.
+      - name: Fetch indices (with retry until the new month appears)
+        if: github.event_name != 'push'
+        env:
+          # Данные за предыдущий календарный месяц: 15 сентября выходит индекс за август.
+          EXPECT: prev-month
+        run: |
+          mkdir -p data
+          for attempt in 1 2 3 4 5 6; do
+            set +e
+            python cbs_index.py \
+              --codes 120010 200010 \
+              --lang he \
+              --expect-period "$EXPECT" \
+              --out data/latest.json
+            status=$?
+            set -e
+
+            case "$status" in
+              0) echo "Свежие данные получены с попытки $attempt"; break ;;
+              2) echo "Попытка $attempt: ЦСБ ещё не опубликовал новый месяц, ждём 10 минут" ;;
+              *) echo "::error::Ошибка получения данных (код $status)"; exit "$status" ;;
+            esac
+
+            if [ "$attempt" -eq 6 ]; then
+              echo "::error::Новый индекс не появился за час после публикации"
+              exit 1
+            fi
+            sleep 600
+          done
+
+          # История за 25 месяцев — для графика годового изменения на сайте.
+          python cbs_index.py --codes 120010 200010 --lang he --history 25 \
+            --out data/history.json
+
+      - name: Archive monthly snapshot
+        if: github.event_name != 'push'
+        run: |
+          period=$(python -c "import json;d=json.load(open('data/latest.json',encoding='utf-8'));print(next(iter(d['indices'].values()))['period'])")
+          mkdir -p data/history
+          cp data/latest.json "data/history/${period}.json"
+
+      - name: Commit results
+        if: github.event_name != 'push'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "Изменений нет — коммит не требуется"
+          else
+            git commit -m "chore(data): обновление индексов ЦСБ"
+            git push
+          fi
+
+      # --- פרסום ל-GitHub Pages: רק אם הוגדר המשתנה ENABLE_PAGES=true ---
+      # מארח חיצוני (Netlify / Vercel / פאנל דומיינים) לא צריך את זה:
+      # ה-Action דוחף את data/ למאגר, והמארח מזהה את ה-push ומעלה מחדש לבד.
+      - name: Assemble site
+        if: vars.ENABLE_PAGES == 'true'
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp -r data _site/data
+
+      - name: Upload Pages artifact
+        if: vars.ENABLE_PAGES == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: fetch
+    if: vars.ENABLE_PAGES == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
