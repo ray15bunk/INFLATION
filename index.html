@@ -147,6 +147,8 @@
     gap: 8px;
   }
   .hero-unit { font-family: var(--body); font-size: 13px; font-weight: 400; color: var(--ink-3); letter-spacing: 0; }
+  .hero-note { font-size: 12.5px; color: var(--ink-3); margin-top: 7px; }
+  .hero-note b { font-weight: 600; color: var(--ink-2); font-variant-numeric: tabular-nums; }
   .deltas { display: flex; gap: 28px; padding-top: 15px; border-top: 1px solid var(--rule); }
   .delta-label { font-size: 11px; font-weight: 600; letter-spacing: .07em; color: var(--ink-3); }
   .delta-value { font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; margin-top: 2px; }
@@ -414,12 +416,20 @@
       head.appendChild(swatch(s.color));
       var names = el("div");
       names.appendChild(el("div", "tile-name", d.name));
-      names.appendChild(el("div", "tile-base", "בסיס: " + (d.base || "לא ידוע")));
+      names.appendChild(el("div", "tile-base",
+        "בסיס: " + (d.base || "לא ידוע") + " = 100 נקודות"));
       head.appendChild(names);
 
       var hero = el("div", "hero");
       hero.appendChild(document.createTextNode(d.value.toFixed(1)));
       hero.appendChild(el("span", "hero-unit", "נקודות"));
+
+      // המדד נמדד בנקודות מול בסיס = 100, ולכן ההפרש מ-100 הוא בדיוק
+      // השינוי המצטבר באחוזים מאז תקופת הבסיס.
+      var sinceBase = el("div", "hero-note");
+      sinceBase.appendChild(document.createTextNode("כלומר "));
+      sinceBase.appendChild(el("b", null, fmtPct(Math.round((d.value - 100) * 10) / 10)));
+      sinceBase.appendChild(document.createTextNode(" מאז " + (d.base || "הבסיס")));
 
       var deltas = el("div", "deltas");
       [["שינוי חודשי", d.change_1m_pct], ["שינוי שנתי", d.change_12m_pct]].forEach(function (p) {
@@ -429,8 +439,12 @@
         deltas.appendChild(b);
       });
 
+      var heroBlock = el("div");
+      heroBlock.appendChild(hero);
+      heroBlock.appendChild(sinceBase);
+
       card.appendChild(head);
-      card.appendChild(hero);
+      card.appendChild(heroBlock);
       card.appendChild(deltas);
       tiles.appendChild(card);
     });
