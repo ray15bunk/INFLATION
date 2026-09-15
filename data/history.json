@@ -1,7 +1,22 @@
 {
-  "retrieved_at": "2026-09-13T13:05:05+00:00",
+  "retrieved_at": "2026-09-15T19:49:53+00:00",
   "history": {
     "120010": [
+      {
+        "code": 120010,
+        "name": "מדד המחירים לצרכן - כללי",
+        "name_ru": "Индекс потребительских цен",
+        "year": 2026,
+        "month": 8,
+        "month_name": "אוגוסט",
+        "period": "2026-08",
+        "value": 105.8,
+        "base": "2024 ממוצע",
+        "change_1m_pct": 0.7,
+        "change_12m_pct": 1.5,
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
+        "source": "https://api.cbs.gov.il/index/data/price?id=120010"
+      },
       {
         "code": 120010,
         "name": "מדד המחירים לצרכן - כללי",
@@ -14,7 +29,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.3,
         "change_12m_pct": 1.5,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -29,7 +44,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.0,
         "change_12m_pct": 1.6,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -44,7 +59,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": -0.3,
         "change_12m_pct": 1.9,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -59,7 +74,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 1.2,
         "change_12m_pct": 1.9,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -74,7 +89,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.4,
         "change_12m_pct": 1.9,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -89,7 +104,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.2,
         "change_12m_pct": 2.0,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -104,7 +119,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": -0.3,
         "change_12m_pct": 1.8,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -119,7 +134,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.0,
         "change_12m_pct": 2.6,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -134,7 +149,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": -0.5,
         "change_12m_pct": 2.4,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -149,7 +164,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.5,
         "change_12m_pct": 2.5,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -164,7 +179,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": -0.6,
         "change_12m_pct": 2.5,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -179,7 +194,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.7,
         "change_12m_pct": 2.9,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -194,7 +209,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.4,
         "change_12m_pct": 3.1,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -209,7 +224,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.3,
         "change_12m_pct": 3.3,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -224,7 +239,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": -0.3,
         "change_12m_pct": 3.1,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -239,7 +254,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 1.1,
         "change_12m_pct": 3.6,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -254,7 +269,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.5,
         "change_12m_pct": 3.3,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -269,7 +284,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.0,
         "change_12m_pct": 3.4,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -284,7 +299,7 @@
         "base": "2024 ממוצע",
         "change_1m_pct": 0.6,
         "change_12m_pct": 3.8,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -299,7 +314,7 @@
         "base": "2022 ממוצע",
         "change_1m_pct": -0.3,
         "change_12m_pct": 3.2,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -314,7 +329,7 @@
         "base": "2022 ממוצע",
         "change_1m_pct": -0.4,
         "change_12m_pct": 3.4,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -329,7 +344,7 @@
         "base": "2022 ממוצע",
         "change_1m_pct": 0.5,
         "change_12m_pct": 3.5,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -344,7 +359,7 @@
         "base": "2022 ממוצע",
         "change_1m_pct": -0.2,
         "change_12m_pct": 3.5,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       },
       {
@@ -359,26 +374,26 @@
         "base": "2022 ממוצע",
         "change_1m_pct": 0.9,
         "change_12m_pct": 3.6,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
-        "source": "https://api.cbs.gov.il/index/data/price?id=120010"
-      },
-      {
-        "code": 120010,
-        "name": "מדד המחירים לצרכן - כללי",
-        "name_ru": "Индекс потребительских цен",
-        "year": 2024,
-        "month": 7,
-        "month_name": "יולי",
-        "period": "2024-07",
-        "value": 107.8,
-        "base": "2022 ממוצע",
-        "change_1m_pct": 0.6,
-        "change_12m_pct": 3.2,
-        "retrieved_at": "2026-09-13T13:05:05+00:00",
+        "retrieved_at": "2026-09-15T19:49:54+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=120010"
       }
     ],
     "200010": [
+      {
+        "code": 200010,
+        "name": "מדד מחירי תשומה בבנייה למגורים - כללי",
+        "name_ru": "Индекс цен ресурсов в жилищном строительстве",
+        "year": 2026,
+        "month": 8,
+        "month_name": "אוגוסט",
+        "period": "2026-08",
+        "value": 103.9,
+        "base": "2025 יולי",
+        "change_1m_pct": 0.4,
+        "change_12m_pct": 3.5,
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
+        "source": "https://api.cbs.gov.il/index/data/price?id=200010"
+      },
       {
         "code": 200010,
         "name": "מדד מחירי תשומה בבנייה למגורים - כללי",
@@ -391,7 +406,7 @@
         "base": "2025 יולי",
         "change_1m_pct": -0.1,
         "change_12m_pct": 3.5,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -406,7 +421,7 @@
         "base": "2025 יולי",
         "change_1m_pct": 0.2,
         "change_12m_pct": 3.7,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -421,7 +436,7 @@
         "base": "2025 יולי",
         "change_1m_pct": 0.6,
         "change_12m_pct": 3.5,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -436,7 +451,7 @@
         "base": "2025 יולי",
         "change_1m_pct": 1.1,
         "change_12m_pct": 3.0,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -451,7 +466,7 @@
         "base": "2025 יולי",
         "change_1m_pct": 0.2,
         "change_12m_pct": 2.1,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -466,7 +481,7 @@
         "base": "2025 יולי",
         "change_1m_pct": 0.2,
         "change_12m_pct": 2.2,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -481,7 +496,7 @@
         "base": "2025 יולי",
         "change_1m_pct": 0.1,
         "change_12m_pct": 2.5,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -496,7 +511,7 @@
         "base": "2025 יולי",
         "change_1m_pct": 0.1,
         "change_12m_pct": 5.1,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -511,7 +526,7 @@
         "base": "2025 יולי",
         "change_1m_pct": 0.6,
         "change_12m_pct": 5.3,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -526,7 +541,7 @@
         "base": "2025 יולי",
         "change_1m_pct": 0.1,
         "change_12m_pct": 5.0,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -541,7 +556,7 @@
         "base": "2025 יולי",
         "change_1m_pct": 0.0,
         "change_12m_pct": 5.1,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -556,7 +571,7 @@
         "base": "2025 יולי",
         "change_1m_pct": 0.4,
         "change_12m_pct": 5.5,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -571,7 +586,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 0.1,
         "change_12m_pct": 5.3,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -586,7 +601,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 0.0,
         "change_12m_pct": 5.6,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -601,7 +616,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 0.1,
         "change_12m_pct": 6.0,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -616,7 +631,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 0.1,
         "change_12m_pct": 6.4,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -631,7 +646,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 0.4,
         "change_12m_pct": 6.1,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -646,7 +661,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 0.4,
         "change_12m_pct": 6.0,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -661,7 +676,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 2.6,
         "change_12m_pct": 5.3,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -676,7 +691,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 0.3,
         "change_12m_pct": 2.9,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -691,7 +706,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 0.3,
         "change_12m_pct": 2.6,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -706,7 +721,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 0.2,
         "change_12m_pct": 2.4,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -721,7 +736,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 0.4,
         "change_12m_pct": 2.3,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       },
       {
@@ -736,22 +751,7 @@
         "base": "2011 יולי",
         "change_1m_pct": 0.2,
         "change_12m_pct": 2.0,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
-        "source": "https://api.cbs.gov.il/index/data/price?id=200010"
-      },
-      {
-        "code": 200010,
-        "name": "מדד מחירי תשומה בבנייה למגורים - כללי",
-        "name_ru": "Индекс цен ресурсов в жилищном строительстве",
-        "year": 2024,
-        "month": 7,
-        "month_name": "יולי",
-        "period": "2024-07",
-        "value": 131.7,
-        "base": "2011 יולי",
-        "change_1m_pct": 0.4,
-        "change_12m_pct": 1.9,
-        "retrieved_at": "2026-09-13T13:05:06+00:00",
+        "retrieved_at": "2026-09-15T19:49:55+00:00",
         "source": "https://api.cbs.gov.il/index/data/price?id=200010"
       }
     ]
