@@ -1,19 +1,19 @@
 {
-  "retrieved_at": "2026-09-16T19:41:40+00:00",
+  "retrieved_at": "2026-10-15T20:02:08+00:00",
   "indices": {
     "120010": {
       "code": 120010,
       "name": "מדד המחירים לצרכן - כללי",
       "name_ru": "Индекс потребительских цен",
       "year": 2026,
-      "month": 8,
-      "month_name": "אוגוסט",
-      "period": "2026-08",
-      "value": 105.8,
+      "month": 9,
+      "month_name": "ספטמבר",
+      "period": "2026-09",
+      "value": 105.3,
       "base": "2024 ממוצע",
-      "change_1m_pct": 0.7,
-      "change_12m_pct": 1.5,
-      "retrieved_at": "2026-09-16T19:41:41+00:00",
+      "change_1m_pct": -0.5,
+      "change_12m_pct": 1.6,
+      "retrieved_at": "2026-10-15T20:02:09+00:00",
       "source": "https://api.cbs.gov.il/index/data/price?id=120010"
     },
     "200010": {
@@ -21,14 +21,14 @@
       "name": "מדד מחירי תשומה בבנייה למגורים - כללי",
       "name_ru": "Индекс цен ресурсов в жилищном строительстве",
       "year": 2026,
-      "month": 8,
-      "month_name": "אוגוסט",
-      "period": "2026-08",
-      "value": 103.9,
+      "month": 9,
+      "month_name": "ספטמבר",
+      "period": "2026-09",
+      "value": 104.0,
       "base": "2025 יולי",
-      "change_1m_pct": 0.4,
-      "change_12m_pct": 3.5,
-      "retrieved_at": "2026-09-16T19:41:41+00:00",
+      "change_1m_pct": 0.1,
+      "change_12m_pct": 3.6,
+      "retrieved_at": "2026-10-15T20:02:09+00:00",
       "source": "https://api.cbs.gov.il/index/data/price?id=200010"
     }
   }
