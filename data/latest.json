@@ -1,5 +1,5 @@
 {
-  "retrieved_at": "2026-10-15T20:02:08+00:00",
+  "retrieved_at": "2026-10-16T19:42:01+00:00",
   "indices": {
     "120010": {
       "code": 120010,
@@ -13,7 +13,7 @@
       "base": "2024 ממוצע",
       "change_1m_pct": -0.5,
       "change_12m_pct": 1.6,
-      "retrieved_at": "2026-10-15T20:02:09+00:00",
+      "retrieved_at": "2026-10-16T19:42:02+00:00",
       "source": "https://api.cbs.gov.il/index/data/price?id=120010"
     },
     "200010": {
@@ -28,7 +28,7 @@
       "base": "2025 יולי",
       "change_1m_pct": 0.1,
       "change_12m_pct": 3.6,
-      "retrieved_at": "2026-10-15T20:02:09+00:00",
+      "retrieved_at": "2026-10-16T19:42:02+00:00",
       "source": "https://api.cbs.gov.il/index/data/price?id=200010"
     }
   }
